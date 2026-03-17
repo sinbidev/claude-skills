@@ -12,6 +12,10 @@ sdf-credentials/
 # Claude Code local config
 .claude/
 
+# LinkedIn content — local only
+linkedin-post.md
+linkedin-marketing-brief.md
+
 # macOS
 .DS_Store
 
