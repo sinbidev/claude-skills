@@ -11,7 +11,7 @@ Configure NetSuite SuiteCloud Development Framework (SDF) with Machine-to-Machin
 Install the skill with a single command:
 
 ```bash
-curl -o ~/.claude/commands/netsuite-sdf-m2m-setup.md \
+mkdir -p ~/.claude/commands && curl -o ~/.claude/commands/netsuite-sdf-m2m-setup.md \
   https://raw.githubusercontent.com/sinbidev/claude-skills/main/netsuite-sdf-m2m-setup/netsuite-sdf-m2m-setup.md
 ```
 
