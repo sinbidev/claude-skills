@@ -12,7 +12,7 @@ Install the skill with a single command:
 
 ```bash
 curl -o ~/.claude/commands/netsuite-sdf-m2m-setup.md \
-  https://raw.githubusercontent.com/matiaslugli08/claude-skills/main/netsuite-sdf-m2m-setup/netsuite-sdf-m2m-setup.md
+  https://raw.githubusercontent.com/sinbidev/claude-skills/main/netsuite-sdf-m2m-setup/netsuite-sdf-m2m-setup.md
 ```
 
 Then open Claude Code inside your SDF project and run:
