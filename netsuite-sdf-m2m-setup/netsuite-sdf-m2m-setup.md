@@ -45,13 +45,15 @@ This step is per-project and must be run from the project root directory.
 
 2. Add `sdf-credentials/` to the project's `.gitignore`. If `.gitignore` doesn't exist, create it. If the entry is already present, skip it.
 
-3. Tell the user that openssl will now ask for certificate details (Country, State, Organization, etc.) and they should fill them in interactively. Then run:
+3. Tell the user to run the following command directly in their terminal (not through Claude) and fill in the certificate details interactively when prompted:
 
 ```
 openssl req -new -x509 -newkey rsa:4096 -keyout sdf-credentials/private.pem -sigopt rsa_padding_mode:pss -sha256 -sigopt rsa_pss_saltlen:64 -out sdf-credentials/public.pem -nodes -days 730
 ```
 
-4. After the command completes, confirm to the user that `private.pem` and `public.pem` were generated inside `sdf-credentials/`, and remind them that this folder is git-ignored and should never be committed.
+Wait for the user to confirm they have run the command before continuing.
+
+4. After the user confirms, verify that `private.pem` and `public.pem` exist inside `sdf-credentials/`. Remind the user that this folder is git-ignored and should never be committed.
 
 ## Step 3 — Upload the public key into your NetSuite account
 
